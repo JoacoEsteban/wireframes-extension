@@ -1,0 +1,25 @@
+{
+  "name": "wireframes-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:firefox": "web-ext run --firefox=firefoxdeveloperedition --verbose",
+    "start": "npm run start:firefox",
+    "build": "web-ext build --overwrite-dest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoacoEsteban/wireframes-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoacoEsteban/wireframes-extension/issues"
+  },
+  "homepage": "https://github.com/JoacoEsteban/wireframes-extension#readme",
+  "dependencies": {
+    "web-ext": "^6.2.0"
+  }
+}
