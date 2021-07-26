@@ -5,18 +5,21 @@
   "description": "Outline every element in the page",
   "version": "0.1",
 
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
   "content_scripts": [{
     "matches": ["<all_urls>"],
     "js": [
-      "src/main.js"
+      "content_scripts/extension.js"
     ],
-    "run_at": "document_end"
+    "css": [
+      "global.css"
+    ]
   }],
 
-  "options_ui": {
-    "page": "src/options.html",
-    "chrome_style": true
-  },
 
   "icons": {
     "128": "icons/icon.png"
@@ -25,7 +28,7 @@
   "browser_action": {
     "default_icon": "icons/icon.png",
     "default_title": "Wireframes",
-    "default_popup": "src/popup.html"
+    "default_popup": "popup/popup.html"
   },
 
   "permissions": [

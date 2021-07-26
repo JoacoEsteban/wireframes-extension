@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:firefox": "web-ext run --firefox=firefoxdeveloperedition --verbose",
+    "start:firefox": "web-ext run --firefox=firefoxdeveloperedition --source-dir ./src",
     "start": "npm run start:firefox",
-    "build": "web-ext build --overwrite-dest"
+    "build": "web-ext build --overwrite-dest --source-dir ./src"
   },
   "repository": {
     "type": "git",

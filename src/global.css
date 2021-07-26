@@ -1,0 +1,3 @@
+html[showing-wireframes=true] body * {
+  outline: 1px solid var(--__wireframes-local-color__, red);
+}
