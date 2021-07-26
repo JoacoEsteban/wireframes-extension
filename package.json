@@ -6,7 +6,8 @@
   "scripts": {
     "start:firefox": "web-ext run --firefox=firefoxdeveloperedition --source-dir ./src",
     "start": "npm run start:firefox",
-    "build": "web-ext build --overwrite-dest --source-dir ./src"
+    "build": "web-ext build --overwrite-dest --source-dir ./src",
+    "sign": "web-ext sign --source-dir ./src"
   },
   "repository": {
     "type": "git",
