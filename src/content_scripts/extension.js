@@ -1,4 +1,7 @@
 (() => {
+  if (window['WIREFRAMES_EXT_INITIALIZED']) return
+  window['WIREFRAMES_EXT_INITIALIZED'] = true
+
   const html = document.querySelector('html')
   const attr = document.createAttribute('showing-wireframes')
 
@@ -56,7 +59,11 @@
   })()
 
   // ------------------------------------------
-  browser.runtime.onMessage.addListener(onMessage)
+
+  {
+    (typeof browser !== 'undefined' && browser || chrome)
+      .runtime.onMessage.addListener(onMessage)
+  }
 
   console.log('extension loaded')
   setColors()
